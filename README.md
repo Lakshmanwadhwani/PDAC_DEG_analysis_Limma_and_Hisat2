@@ -7,6 +7,24 @@ This repository contains scripts and data files used for a differential expressi
 ## Workflow 🧰
 ![Workflow Diagram](./Assets/image.svg)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 The work flow was largley conducted using the galaxy web interface (version 23.0.3), with the exception of the data importation and QC steps conducted using Anaconda powershell's command line.
 
 1. Data importation from SRA using Anaconda's PowerShell.
