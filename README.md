@@ -5,6 +5,7 @@
 This repository contains scripts and data files used for a differential expression analysis of RNA-seq data focusing on pancreatic cancer. The primary objective is to identify differentially expressed genes between poorly differentiated Pancreatic Ductal Adenocarcinoma (PDAC) and normal pancreatic samples. The experiment pays particular attention to the expression of the S100P gene and the effects of the naphthalene diimide compound QN-302, which targets G-quadruplex DNA sequences in the promoter regions of cancer-related genes. The analysis incorporates the EdgeR package for differential expression analysis and Hisat2 for RNA sequence alignment.
 
 ## Workflow 🧰
+The work flow was largley conducted using the galaxy web interface (version 23.0.3), with the exception of the data importation and QC steps conducted using Anaconda powershell's command line.
 
 1. Data importation from SRA using Anaconda's PowerShell.
 2. Quality control checks on raw data using FastQC in Anaconda's PowerShell.
