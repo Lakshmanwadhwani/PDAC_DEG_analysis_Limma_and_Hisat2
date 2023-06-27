@@ -1,15 +1,15 @@
-# PancreaticCancer-RNAseq-EdgeR-Hisat2
+# PancreaticCancer-RNAseq-EdgeR-Hisat2 🧬
 
 ## Description
 
 This repository contains scripts and data files used for a differential expression analysis of RNA-seq data focusing on pancreatic cancer. The primary objective is to identify differentially expressed genes between poorly differentiated Pancreatic Ductal Adenocarcinoma (PDAC) and normal pancreatic samples. The experiment pays particular attention to the expression of the S100P gene and the effects of the naphthalene diimide compound QN-302, which targets G-quadruplex DNA sequences in the promoter regions of cancer-related genes. The analysis incorporates the EdgeR package for differential expression analysis and Hisat2 for RNA sequence alignment.
 
-## Workflow
+## Workflow 🧰
 
 1. Data importation from SRA using Anaconda's PowerShell.
 2. Quality control checks on raw data using FastQC in Anaconda's PowerShell.
 3. RNA sequence alignment using Hisat2 in Galaxy (version 23.0.3).
-4. Differential expression analysis using EdgeR in Galaxy (version 23.0.3).
+4. Differential expression analysis using Limma in Galaxy (version 23.0.3).
 
 ## Getting Started
 
