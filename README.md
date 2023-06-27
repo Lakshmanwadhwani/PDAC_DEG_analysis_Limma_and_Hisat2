@@ -41,7 +41,25 @@ Provide information about the dataset being used, such as the data source, and h
 ### Usage
 
 #### Importing Data from SRA
-Provide steps on how to import data from SRA using Anaconda's PowerShell.
+```powershell
+# Step 1: Open Anaconda's PowerShell
+
+# Step 2: Install the SRA Toolkit
+conda install -c bioconda sra-tools
+
+# Step 3: Download the data using the SRA Toolkit. Replace `SRA_ACCESSION` with the actual SRA accession number.
+fastq-dump --split-3 SRA_ACCESSION
+
+# Step 4: Optionally specify a different directory to download the data using the -O option.
+# Replace '/path/to/your/directory' with the actual directory path.
+fastq-dump --split-3 -O /path/to/your/directory SRA_ACCESSION
+
+# Step 5: Optionally download multiple datasets by listing multiple SRA accession numbers.
+# Replace 'SRA_ACCESSION1', 'SRA_ACCESSION2', etc with the actual SRA accession numbers.
+fastq-dump --split-3 -O /path/to/your/directory SRA_ACCESSION1 SRA_ACCESSION2 SRA_ACCESSION3
+
+# Step 6: Once the data is downloaded, you can proceed to the quality control checks and subsequent analysis steps.
+
 
 #### Example:
 ```powershell
