@@ -1,5 +1,5 @@
 
-[Paper NCBI]([https://example.com/paper.pdf](https://pubmed.ncbi.nlm.nih.gov/36985425/)
+[Paper PDF](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10051992/pdf/molecules-28-02452.pdf)
 
 # PancreaticCancer-RNAseq-EdgeR-Hisat2 🧬
 
