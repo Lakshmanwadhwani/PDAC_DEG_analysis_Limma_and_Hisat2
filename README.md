@@ -1,3 +1,6 @@
+
+[Paper NCBI]([https://example.com/paper.pdf](https://pubmed.ncbi.nlm.nih.gov/36985425/)
+
 # PancreaticCancer-RNAseq-EdgeR-Hisat2 🧬
 
 ## Description
