@@ -43,7 +43,9 @@ The work flow was largley conducted using the galaxy web interface (version 23.0
 
 ### Prerequisites
 
-- EdgeR
+- Limma
+- annotateMyIDs
+- featurecounts
 - Hisat2
 - FastQC
 - Anaconda
