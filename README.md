@@ -53,20 +53,30 @@ The work flow was largley conducted using the galaxy web interface (version 23.0
 
 ### Installation
 
-Provide steps on how to install the required software.
+Software
+The following software was used in this project:
 
-#### Example:
-1. Install Anaconda from [https://www.anaconda.com/products/distribution](https://www.anaconda.com/products/distribution)
-2. Install FastQC:
-conda install -c bioconda fastqc
+-Anaconda is a free and open-source distribution of the Python programming language for scientific computing. It includes a collection of pre-compiled software packages for data analysis, machine learning, and other scientific computing tasks.
+-VS Code is a code editor developed by Microsoft. It is a lightweight and extensible editor that can be used for a variety of programming languages.
+-PowerShell is a command-line shell and scripting language developed by Microsoft. It is used to automate tasks on Windows computers.
+-FastQC is a tool for quality control of high-throughput sequencing data. It can be used to assess the quality of FASTQ files, identify potential problems with the data, and generate reports.
+-Trimmomatic is a tool for trimming adapters and low-quality sequences from FASTQ files. It is used to improve the quality of the data before it is analyzed further.
+-Hisat2 is a tool for aligning RNA-seq reads to a reference genome. It is a fast and accurate aligner that can be used to map reads from a variety of sequencing platforms.
+-Limma is a statistical package for analyzing differential gene expression data. It can be used to identify genes that are differentially expressed between two or more conditions.
+-AnnotateMyIDs is a tool for annotating gene IDs with gene symbols, descriptions, and other information. It can be used to make the results of the limma analysis more interpretable.
+#Instructions
+To run this project, you will need to have a Galaxy account and access to the Galaxy GUI platform. Once you have logged into Galaxy, you can follow these instructions:
 
-
-Copy code
-3. Setup Galaxy server following instructions from [https://galaxyproject.org/admin/get-galaxy/](https://galaxyproject.org/admin/get-galaxy/)
+Import the project files into Galaxy.
+Run the fastqc tool on the FASTQ files.
+Run the trimmomatic tool on the FASTQ files.
+Run the hisat2 tool on the trimmed FASTQ files.
+Run the limma tool on the alignment files.
+Run the annotateMyIDs tool on the results of the limma analysis.
 
 ### Data
 
-Provide information about the dataset being used, such as the data source, and how it can be obtained.
+All data was obtained
 
 ### Usage
 
