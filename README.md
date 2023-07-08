@@ -51,19 +51,6 @@ The work flow was largley conducted using the galaxy web interface (version 23.0
 - Anaconda
 - Galaxy (version 23.0.3)
 
-### Installation
-
-Software
-The following software was used in this project:
-
--Anaconda is a free and open-source distribution of the Python programming language for scientific computing. It includes a collection of pre-compiled software packages for data analysis, machine learning, and other scientific computing tasks.
--VS Code is a code editor developed by Microsoft. It is a lightweight and extensible editor that can be used for a variety of programming languages.
--PowerShell is a command-line shell and scripting language developed by Microsoft. It is used to automate tasks on Windows computers.
--FastQC is a tool for quality control of high-throughput sequencing data. It can be used to assess the quality of FASTQ files, identify potential problems with the data, and generate reports.
--Trimmomatic is a tool for trimming adapters and low-quality sequences from FASTQ files. It is used to improve the quality of the data before it is analyzed further.
--Hisat2 is a tool for aligning RNA-seq reads to a reference genome. It is a fast and accurate aligner that can be used to map reads from a variety of sequencing platforms.
--Limma is a statistical package for analyzing differential gene expression data. It can be used to identify genes that are differentially expressed between two or more conditions.
--AnnotateMyIDs is a tool for annotating gene IDs with gene symbols, descriptions, and other information. It can be used to make the results of the limma analysis more interpretable.
 #Instructions
 To run this project, you will need to have a Galaxy account and access to the Galaxy GUI platform. Once you have logged into Galaxy, you can follow these instructions:
 
@@ -76,9 +63,18 @@ Run the annotateMyIDs tool on the results of the limma analysis.
 
 ### Data
 
-All data was obtained
+All data was obtained from NCBI sequence read archive at https://www.ncbi.nlm.nih.gov/sra.
+The RNA-seq data set was generated to study the effects of the drug QN-302 on the expression of the S100P gene in pancreatic cancer cells. The data set includes two groups of samples: two poorly differentiated pancreatic cancer cell lines (PDAC) and two normal pancreatic tissue samples. The goal of the differential expression analysis is to identify genes that are differentially expressed between the two groups of samples.
 
-### Usage
+The data was aligned to the human genome using the Hisat2 aligner and then analyzed using the Limma package. The results of the analysis will be used to identify genes that are up- or down-regulated in response to QN-302 treatment. These genes may be involved in the molecular pathways that are affected by the drug, and they could be potential therapeutic targets for pancreatic cancer.
+
+Here are some additional details about the data:
+
+The data set includes a total of 4 samples: 2 PDAC samples and 2 normal pancreatic tissue samples.
+The data was generated using the Illumina HiSeq 2500 platform.
+The sequencing depth is approximately 10 million reads per sample.
+The data was aligned to the human genome (hg19) using the Hisat2 aligner.
+The differential expression analysis was performed using the Limma package.
 
 #### Importing Data from SRA
 ```powershell
