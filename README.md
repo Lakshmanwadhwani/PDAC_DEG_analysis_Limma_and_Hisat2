@@ -82,8 +82,8 @@ The differential expression analysis was performed using the Limma package.
 
 
 ### Importing Data from SRA
-powershell
-# Step 1: Open Anaconda's PowerShell
+
+````# Step 1: Open Anaconda's PowerShell
 
 # Step 2: Install the SRA Toolkit
 conda install -c bioconda sra-tools
@@ -99,7 +99,7 @@ fastq-dump --split-3 -O /path/to/your/directory SRA_ACCESSION
 # Replace 'SRA_ACCESSION1', 'SRA_ACCESSION2', etc with the actual SRA accession numbers.
 fastq-dump --split-3 -O /path/to/your/directory SRA_ACCESSION1 SRA_ACCESSION2 SRA_ACCESSION3
 
-# Step 6: Once the data is downloaded, you can proceed to the quality control checks and subsequent analysis steps.
+# Step 6: Once the data is downloaded, you can proceed to the quality control checks and subsequent analysis steps.````
 
 
 ### Results
