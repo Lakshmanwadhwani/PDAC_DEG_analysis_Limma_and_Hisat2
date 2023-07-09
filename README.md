@@ -81,32 +81,27 @@ The differential expression analysis was performed using the Limma package.
 | Normal      | SRR23641862       |
 
 
-### Importing Data from SRA
+## 📥 Importing Data from the SRA
 
-````# Step 1: Open Anaconda's PowerShell
+You can download data directly from the Sequence Read Archive (SRA). Here are the steps:
 
-# Step 2: Install the SRA Toolkit
-conda install -c bioconda sra-tools
+1. Go to the [SRA website](https://www.ncbi.nlm.nih.gov/sra).
+2. In the search bar, enter the SRA accession number or other relevant keywords for the data you want to download.
+3. Click on the desired dataset from the search results.
+4. Click on the "Send to" button, select "File", and then click "Create File". This will download a file that contains the information required to download the actual data.
+5. Use the `fastq-dump` command from the SRA Toolkit to download the data. The command looks like this: `fastq-dump SRRxxxxxx`.
 
-# Step 3: Download the data using the SRA Toolkit. Replace `SRA_ACCESSION` with the actual SRA accession number.
-fastq-dump --split-3 SRA_ACCESSION
+Please replace `SRRxxxxxx` with the specific SRA accession number.
 
-# Step 4: Optionally specify a different directory to download the data using the -O option.
-# Replace '/path/to/your/directory' with the actual directory path.
-fastq-dump --split-3 -O /path/to/your/directory SRA_ACCESSION
+## 📊 Results
 
-# Step 5: Optionally download multiple datasets by listing multiple SRA accession numbers.
-# Replace 'SRA_ACCESSION1', 'SRA_ACCESSION2', etc with the actual SRA accession numbers.
-fastq-dump --split-3 -O /path/to/your/directory SRA_ACCESSION1 SRA_ACCESSION2 SRA_ACCESSION3
+This section will be updated with results from the analysis.
 
-# Step 6: Once the data is downloaded, you can proceed to the quality control checks and subsequent analysis steps.````
+## 📜 License
 
+This project is licensed under the terms of the MIT license.
 
-### Results
-Provide information on what results/output they should expect.
+## 👏 Acknowledgments
 
-### License
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+I would like to thank everyone who has contributed to this project.
 
-### Acknowledgments
-Mention any collaborators, funding bodies, etc.
