@@ -81,7 +81,7 @@ The differential expression analysis was performed using the Limma package.
 | Normal      | SRR23641862       |
 
 
-#### Importing Data from SRA
+### Importing Data from SRA
 ```powershell
 # Step 1: Open Anaconda's PowerShell
 
@@ -101,25 +101,11 @@ fastq-dump --split-3 -O /path/to/your/directory SRA_ACCESSION1 SRA_ACCESSION2 SR
 
 # Step 6: Once the data is downloaded, you can proceed to the quality control checks and subsequent analysis steps.
 
-
-#### Example:
-```powershell
-# Command in PowerShell for importing data from SRA
-Quality Control using FastQC
-Provide steps on how to conduct quality control using FastQC.
-
-Example:
-powershell
-Copy code
-# Command in PowerShell for running FastQC
-Galaxy Steps
-Provide detailed steps on how to use Galaxy for RNA sequence alignment and differential expression analysis.
-
-Results
+### Results
 Provide information on what results/output they should expect.
 
-License
+### License
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
-Acknowledgments
+### Acknowledgments
 Mention any collaborators, funding bodies, etc.
