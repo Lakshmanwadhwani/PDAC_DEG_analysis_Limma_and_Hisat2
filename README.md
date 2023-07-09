@@ -99,7 +99,8 @@ fastq-dump --split-3 -O /path/to/your/directory SRA_ACCESSION
 # Replace 'SRA_ACCESSION1', 'SRA_ACCESSION2', etc with the actual SRA accession numbers.
 fastq-dump --split-3 -O /path/to/your/directory SRA_ACCESSION1 SRA_ACCESSION2 SRA_ACCESSION3
 
-# Step 6: Once the data is downloaded, you can proceed to the quality control checks and subsequent analysis steps.
+# Step 6: Once the data is downloaded, you can proceed to the quality control checks and subsequent analysis steps.````
+
 
 ### Results
 Provide information on what results/output they should expect.
