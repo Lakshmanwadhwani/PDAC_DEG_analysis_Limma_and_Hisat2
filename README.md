@@ -51,7 +51,6 @@ The work flow was largley conducted using the galaxy web interface (version 23.0
 - Anaconda
 - Galaxy (version 23.0.3)
 
-#Instructions
 To run this project, you will need to have a Galaxy account and access to the Galaxy GUI platform. Once you have logged into Galaxy, you can follow these instructions:
 
 Import the project files into Galaxy.
