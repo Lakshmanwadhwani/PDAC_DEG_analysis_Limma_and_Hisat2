@@ -64,7 +64,6 @@ Run the annotateMyIDs tool on the results of the limma analysis.
 
 All data was obtained from NCBI sequence read archive at https://www.ncbi.nlm.nih.gov/sra.
 The RNA-seq data set was generated to study the effects of the drug QN-302 on the expression of the S100P gene in pancreatic cancer cells. The data set includes two groups of samples: two poorly differentiated pancreatic cancer cell lines (PDAC) and two normal pancreatic tissue samples. The goal of the differential expression analysis is to identify genes that are differentially expressed between the two groups of samples.
-
 The data was aligned to the human genome using the Hisat2 aligner and then analyzed using the Limma package. The results of the analysis will be used to identify genes that are up- or down-regulated in response to QN-302 treatment. These genes may be involved in the molecular pathways that are affected by the drug, and they could be potential therapeutic targets for pancreatic cancer.
 
 Here are some additional details about the data:
@@ -74,6 +73,13 @@ The data was generated using the Illumina HiSeq 2500 platform.
 The sequencing depth is approximately 10 million reads per sample.
 The data was aligned to the human genome (hg19) using the Hisat2 aligner.
 The differential expression analysis was performed using the Limma package.
+| Tissue Type | SRA Accession No. |
+|-------------|-------------------|
+| PDAC        | SRR23641868       |
+| PDAC        | SRR23641867       |
+| Normal      | SRR23641863       |
+| Normal      | SRR23641862       |
+
 
 #### Importing Data from SRA
 ```powershell
