@@ -11,7 +11,7 @@ QN-302 is currently in pre-IND development and is emerging as a promising therap
 
 To that end, I have set up this GitHub repository, which contains scripts and data files used for a differential expression analysis of RNA-seq data with a specific focus on pancreatic cancer. The primary objective of this project is to replicate the original authors' experiment to identify differentially expressed genes between poorly differentiated Pancreatic Ductal Adenocarcinoma (PDAC) and normal pancreatic samples. A critical part of this analysis is to explore the expression of the S100P gene in both disease and wild-type states and to observe the impact of QN-302, a naphthalene diimide compound known to target G-quadruplex DNA sequences in cancer-associated genes.
 
-This replication experiment serves a dual purpose: Firstly, it provides a valuable opportunity to gain hands-on experience with the RNA-seq pipeline development process. Secondly, it facilitates the exploration and mapping of differentially expressed genes across varying conditions. The tools used in this analysis, such as the Limma package for differential expression and Hisat2 for RNA sequence alignment, further augment this learning experience. By replicating the authors' experiment, I aim to enhance my understanding of the RNA-seq pipeline and contribute to the ongoing research into potential novel treatments for pancreatic cancer, such as QN-302."
+This replication experiment serves a dual purpose: Firstly, it provides me a valuable opportunity to gain hands-on experience with the RNA-seq pipeline development process. Secondly, it facilitates the exploration and mapping of differentially expressed genes across varying conditions. The tools used in this analysis, such as the Limma package for differential expression and Hisat2 for RNA sequence alignment, further augment this learning experience. 
 
 ## Workflow 🧰
 ![Workflow Diagram](./image.png)
@@ -115,9 +115,19 @@ The results of this study suggest that QN-302 may be a promising new therapeutic
 | Normal      | 0.46    | -0.08 |
 | PDAC        | 0.0002  | -2.27 |
 
+My results:
 
+Looking at my data (TSV file in this repository), it lists several genes along with their respective Log fold changes (LogFC) and adjusted p-values (adj.p.val). The LogFC is a measure of the ratio of changes in gene expression between the two conditions I'm comparing. When I see a positive LogFC, it indicates that a gene is upregulated, while a negative LogFC indicates downregulation.
 
-This section will be updated with results from the analysis.
+The adjusted p-values listed here are the corrected p-values that account for the false discovery rate due to making multiple comparisons, which is common in high-throughput experiments like the one I'm doing with RNA-seq.
+
+In my data, all of the genes listed have an adjusted p-value ranging from 0.52 1.00. In the biological studies I'm familiar with, an adjusted p-value below 0.05 is typically considered statistically significant. So, based on these data, none of the genes listed would be considered significantly differentially expressed at the traditional significance level.
+
+That doesn't mean the changes aren't interesting. For instance, the gene REG3G shows a LogFC of 6.70, suggesting it's highly upregulated in one condition compared to the other. The gene TFF2, with a LogFC of -6.25, appears to be highly downregulated. But the high p-values mean that, according to typical thresholds, these changes aren't statistically significant.
+
+In summary, given the high p-values, none of the changes in gene expression listed in my table would be considered statistically significant. This suggests to me that I might need to do more investigation or perhaps increase my sample size to confirm these changes.
+
+This section will be updated with  discussion of results from further analysis.
 
 ## 📜 License
 
@@ -125,5 +135,11 @@ This project is licensed under the terms of the MIT license.
 
 ## 👏 Acknowledgments
 
-I would like to thank everyone who has contributed to this project.
+Analysis for this project was performed using the Galaxy platform. The following paper provides more details about the platform and its capabilities:
+
+Afgan, E., Baker, D., Batut, B., van den Beek, M., Bouvier, D., Čech, M., Chilton, J., Clements, D., Coraor, N., Grüning, B.A. and Guerler, A., 2018. The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update. Nucleic acids research, 46(W1), pp.W537-W544.
+
+Galaxy platform can be accessed here: https://usegalaxy.org
+
+We thank the Galaxy community for maintaining this useful resource for the scientific community.
 
