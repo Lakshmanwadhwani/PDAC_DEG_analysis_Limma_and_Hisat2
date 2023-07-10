@@ -3,9 +3,15 @@
 
 # PancreaticCancer-RNAseq-Limma-Hisat2 🧬
 
-## Description
+## Background
 
-This repository contains scripts and data files used for a differential expression analysis of RNA-seq data focusing on pancreatic cancer. The primary objective is to identify differentially expressed genes between poorly differentiated Pancreatic Ductal Adenocarcinoma (PDAC) and normal pancreatic samples. The authors primary focus was to understand the expression of the S100P gene in the context of disease and wild-type and the effects of the naphthalene diimide compound QN-302, which targets G-quadruplex DNA sequences in the promoter regions of cancer-related genes. The analysis incorporates the Limma package for differential expression analysis and Hisat2 for RNA sequence alignment.
+QN-302, a unique compound that interacts with G-quadruplex DNA sequences in cancer-related genes, exhibits remarkable anti-proliferative activity in pancreatic cancer cell lines and significant anti-tumor effects in experimental models. Intriguingly, the S100P gene, a specific target of QN-302, harbors 60 potential quadruplex-forming sequences. One of these sequences, located within the promoter region, forms a highly stable G-quadruplex in vitro, which is further stabilized by QN-302. This interaction leads to the downregulation of S100P gene expression, potentially inhibiting the proliferation and invasiveness of pancreatic cancer cells.
+
+QN-302 is currently in pre-IND development and is emerging as a promising therapeutic candidate for pancreatic cancer, with its mode of action potentially targeting the S100P promoter G-quadruplex at the transcriptional level. Although this hypothesis is supported by compelling evidence, it invites further exploration and validation.
+
+To that end, I have set up this GitHub repository, which contains scripts and data files used for a differential expression analysis of RNA-seq data with a specific focus on pancreatic cancer. The primary objective of this project is to replicate the original authors' experiment to identify differentially expressed genes between poorly differentiated Pancreatic Ductal Adenocarcinoma (PDAC) and normal pancreatic samples. A critical part of this analysis is to explore the expression of the S100P gene in both disease and wild-type states and to observe the impact of QN-302, a naphthalene diimide compound known to target G-quadruplex DNA sequences in cancer-associated genes.
+
+This replication experiment serves a dual purpose: Firstly, it provides a valuable opportunity to gain hands-on experience with the RNA-seq pipeline development process. Secondly, it facilitates the exploration and mapping of differentially expressed genes across varying conditions. The tools used in this analysis, such as the Limma package for differential expression and Hisat2 for RNA sequence alignment, further augment this learning experience. By replicating the authors' experiment, I aim to enhance my understanding of the RNA-seq pipeline and contribute to the ongoing research into potential novel treatments for pancreatic cancer, such as QN-302."
 
 ## Workflow 🧰
 ![Workflow Diagram](./image.png)
