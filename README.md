@@ -94,6 +94,22 @@ You can download data directly from the Sequence Read Archive (SRA). Here are th
 Please replace `SRRxxxxxx` with the specific SRA accession number.
 
 ## 📊 Results
+### Summary of Results
+
+From the authors of study:In normal pancreatic tissue, the expression of the S100P gene was not significantly affected by treatment with QN-302. The P value for the difference in expression between the treated and untreated groups was 0.46, and the LogFC was -0.08. This suggests that QN-302 does not have a significant effect on the expression of the S100P gene in normal pancreatic tissue.
+
+In poorly differentiated pancreatic tissue, the expression of the S100P gene was significantly decreased by treatment with QN-302. The P value for the difference in expression between the treated and untreated groups was 0.0002, and the LogFC was -2.27. This suggests that QN-302 is a potent inhibitor of S100P expression in poorly differentiated pancreatic tissue.
+
+The results of this study suggest that QN-302 may be a promising new therapeutic agent for the treatment of pancreatic cancer. However, further studies are needed to confirm the efficacy and safety of QN-302 treatment in humans.Below simple summary table. For a detailed results and discussion please refer to the link
+
+### Summary Table
+
+| Tissue Type | P Value | LogFC |
+| ----------- | ------- | ----- |
+| Normal      | 0.46    | -0.08 |
+| PDAC        | 0.0002  | -2.27 |
+
+
 
 This section will be updated with results from the analysis.
 
